@@ -1,0 +1,9 @@
+<img src ="./assets/requirements.JPG" class="d-block mx-auto">
+
+
+<input type="" class="d-block mx-auto" [(ngModel)]="username" (input)="setUsername($event)" name="">
+<p class="text-center"> {{username}}</p>
+<div class="text-center">
+  <button type="button" [disabled]="buttonDisabled" class="text-center" class="btn btn-success" (click)="resetUsername()">	Reset
+  </button>
+</div>

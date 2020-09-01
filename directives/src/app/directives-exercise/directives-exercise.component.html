@@ -1,0 +1,19 @@
+<div class="container">
+	<button type="button" (click)="toggleParagraph()" class="d-block btn btn-success mx-auto">
+		Display Details
+	</button>
+
+	<img src="./assets/requirements.JPG" class="mx-auto d-block my-5">
+
+	<p class="text-center mt-3" id="testingParagraph" [ngClass]="{'hideParagraph': paragraphVisible == false}" >   
+		This a testing paragraph
+	</p>
+
+
+	<ul class="mx-auto w-50" >
+		<li *ngFor="let value of buttonClickArray" [ngStyle]="{'background-color': value >= 5 ? 'blue' : 'white'}"
+			[ngClass]="{'whiteColor':value >= 5}">
+	  		{{ value }}
+		</li>
+	</ul>
+</div>
